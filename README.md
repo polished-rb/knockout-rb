@@ -1,6 +1,6 @@
 # Opal: Knockout
 
-TODO: Write a gem description
+An Opal wrapper for creating view models that use Knockout.js for dynamic HTML updates and event handling.
 
 ## Installation
 

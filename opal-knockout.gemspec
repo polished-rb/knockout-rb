@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Opal::Knockout::VERSION
   spec.authors       = ["Jared White"]
   spec.email         = ["jared@jaredwhite.com"]
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.description   = %q{An Opal wrapper for creating view models that use Knockout.js for dynamic HTML updates and event handling}
   spec.summary       = spec.description
   spec.homepage      = "https://github.com/jaredcwhite/opal-knockout"
   spec.license       = "MIT"
