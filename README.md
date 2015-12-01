@@ -24,22 +24,22 @@ Documentation on the way. An example:
 
 ```json
 [
-	{
-		"first_name": "Jasmine",
-		"last_name": "Kitty",
-		"age": 6,
-		"user_types": ["Female", "Cat"],
-		"favorite_foods": [
-			{
-				"name": "Fish",
-				"origin": "Ocean"
-			},
-			{
-				"name": "Kibble",
-				"origin": "Pet Store"
-			}
-		]
-	}
+  {
+    "first_name": "Jasmine",
+    "last_name": "Kitty",
+    "age": 6,
+    "user_types": ["Female", "Cat"],
+    "favorite_foods": [
+      {
+        "name": "Fish",
+        "origin": "Ocean"
+      },
+      {
+        "name": "Kibble",
+        "origin": "Pet Store"
+      }
+    ]
+  }
 ]
 ```
 
@@ -65,25 +65,25 @@ Documentation on the way. An example:
 
 ```ruby
 class UsersView < Knockout::ViewModel
-	bind_id					"test-users"
-	bind_collection :users, class_name: 'UserView'
+  bind_id         "test-users"
+  bind_collection :users, class_name: 'UserView'
 end
 
 class UserView < Knockout::ViewModel
-	bind_accessor		:first_name, :last_name, :age, :user_types
-	bind_collection :favorite_foods, class_name: 'FavoriteFoodView'
+  bind_accessor   :first_name, :last_name, :age, :user_types
+  bind_collection :favorite_foods, class_name: 'FavoriteFoodView'
 end
 
 class FavoriteFoodView < Knockout::ViewModel
-	bind_accessor		:name
-	bind_var				:origin
-	
-	def origin=(val)
-		@origin = val
-	end
-	def origin
-		@origin ? @origin.upcase : ""
-	end
+  bind_accessor   :name
+  bind_var        :origin
+  
+  def origin=(val)
+    @origin = val
+  end
+  def origin
+    @origin ? @origin.upcase : ""
+  end
 end
 ```
 
@@ -95,7 +95,7 @@ Just instantiate your top-level model, load the JSON into the collection, and kn
 users_view = UsersView.new
 		
 HTTP.get("/users.json").then do |response|
-	users_view.users.concat(response.json)
+  users_view.users.concat(response.json)
 end
 
 # updates the DOM in real-time
