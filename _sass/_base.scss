@@ -1,3 +1,7 @@
+$text-color: #222;
+$background-color: #fafafa;
+$brand-color: #226622;
+
 /**
  * Reset some basic elements
  */
@@ -95,11 +99,11 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color;
     }
 
     &:hover {
-        color: $text-color;
+        color: lighten($brand-color, 15%);
         text-decoration: underline;
     }
 }
@@ -132,7 +136,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #f0f0f0;
 }
 
 code {
@@ -203,4 +207,14 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+
+hr {
+
+  border: none;
+  border-top: solid 1px $grey-color;
+  margin: 2em 0;
+
 }

@@ -9,7 +9,7 @@
 title: Opal-Knockout
 email: jared@jaredwhite.com
 description: > # this means to ignore newlines until "baseurl:"
-  An Opal wrapper for creating view models that use Knockout.js for dynamic HTML updates and event handling.
+  An Opal library for creating view models that use Knockout.js for dynamic HTML DOM updates and event handling.
 baseurl: "/opal-knockout" # the subpath of your site, e.g. /blog
 url: "http://jaredcwhite.github.io" # the base hostname & protocol for your site
 twitter_username: jaredcwhite
