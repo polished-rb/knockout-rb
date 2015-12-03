@@ -5,4 +5,6 @@ else
   require 'opal/knockout/version'
 
   Opal.append_path File.expand_path('../..', __FILE__).untaint
+  
+  require 'opal/knockout/railtie' if defined?(Rails::Railtie)
 end
