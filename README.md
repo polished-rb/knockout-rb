@@ -1,12 +1,14 @@
-# Opal: Knockout
+# Polished: Knockout
 
-An Opal wrapper for creating view models that use Knockout.js for dynamic HTML updates and event handling.
+An [Opal (Ruby-to-JS)](http://opalrb.org) wrapper for creating view models that use Knockout.js for dynamic HTML updates and event handling.
 
 ## Installation
 
+_NOTE! This project is still in its infancy and not yet on RubyGems. Once it's initially released, this will work:_
+
 Add this line to your application's Gemfile:
 
-    gem 'opal-knockout'
+    gem 'polished-knockout'
 
 And then execute:
 
@@ -14,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install opal-knockout
+    $ gem install polished-knockout
 
 ## Usage
 
@@ -108,7 +110,7 @@ puts users_view.users[0].favorite_foods[1].origin # output is "PET STORE"
 
 ## Contributing
 
-1. Fork it ( http://github.com/jaredcwhite/opal-knockout/fork )
+1. Fork it ( http://github.com/polished-rb/knockout/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -117,5 +119,3 @@ puts users_view.users[0].favorite_foods[1].origin # output is "PET STORE"
 ## Testing
 
 Simply run `rackup` at your command line when you're in the project folder. It will load a webserver at port 9292. Then just go to your browser and access `http://localhost:9292`. You should get the full rspec suite runner output. (And hopefully, everything's green!)
-
-_If you have trouble using Safari, try using Chrome instead. I'm not sure why this is sometimes an issue..._

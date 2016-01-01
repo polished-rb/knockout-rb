@@ -1,4 +1,4 @@
-module OpalKnockout
+module PolishedKnockout
   module KnockoutHelpers
     def knockout(partial=nil, subview:nil, bind_as:nil)
       if partial
