@@ -2,7 +2,7 @@
 
 [Opal](http://opalrb.org) is a Ruby to JavaScript Compiler. It is source-to-source, making it fast as a runtime. Opal includes a compiler (which can be run in any browser), a corelib and runtime implementation. The corelib/runtime is also very small.
 
-The **[Opal-Knockout](https://github.com/jaredcwhite/opal-knockout)** gem brings these two technologies together, allowing you to write new View Models with simple Ruby code to handle dynamic data, event handling, and nested compotent composition. All the Knockout connections are managed for you, facilitating an elegant way to load, edit, and save data that updates the HTML DOM in real-time.
+As part of the Polished collection of front-end framework components, the **[Knockout](https://github.com/polished-rb/knockout)** gem brings these two technologies together, allowing you to write new View Models with simple Ruby code to handle dynamic data, event handling, and nested compotent composition. All the Knockout connections are managed for you, facilitating an elegant way to load, edit, and save data that updates the HTML DOM in real-time.
 
 Here's an example of a simple View Model:
 
@@ -21,7 +21,7 @@ class UsersView < Knockout::ViewModel
 end
 {% endhighlight %}
 
-To learn more about how this works and to get started using Opal-Knockout in your own project, read the [Getting Started tutorial](/opal-knockout/getting-started/). For further in-depth documentation, visit the [Documentation section](/opal-knockout/docs/).
+To learn more about how this works and to get started using Polished: Knockout in your own project, read the [Getting Started tutorial](/knockout/getting-started/). For further in-depth documentation, visit the [Documentation section](/knockout/docs/).
 
-Interested in contributing, or need to raise an issue? The {% include icon-github.html username="jaredcwhite" %} /
-[opal-knockout](https://github.com/jaredcwhite/opal-knockout) repo on GitHub is the place to start!
+Interested in contributing, or need to raise an issue? The {% include icon-github.html username="polished-rb" %} /
+[knockout](https://github.com/polished-rb/knockout) repo on GitHub is the place to start!

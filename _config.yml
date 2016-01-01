@@ -6,14 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Opal-Knockout
+title: Polished - Knockout
 email: jared@jaredwhite.com
 description: > # this means to ignore newlines until "baseurl:"
   An Opal library for creating view models that use Knockout.js for dynamic HTML DOM updates and event handling.
-baseurl: "/opal-knockout" # the subpath of your site, e.g. /blog
-url: "http://jaredcwhite.github.io" # the base hostname & protocol for your site
+baseurl: "/knockout" # the subpath of your site, e.g. /blog
+url: "http://polished-rb.github.io" # the base hostname & protocol for your site
 twitter_username: jaredcwhite
-github_username:  jaredcwhite
+github_username:  polished-rb
 
 # Build settings
 markdown: kramdown
