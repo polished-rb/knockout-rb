@@ -10,7 +10,7 @@ title: "Polished: Knockout"
 email: jared@jaredwhite.com
 description: > # this means to ignore newlines until "baseurl:"
   An Opal library for creating view models that use Knockout.js for dynamic HTML DOM updates and event handling.
-baseurl: "/knockout" # the subpath of your site, e.g. /blog
+baseurl: "/knockout-rb" # the subpath of your site, e.g. /blog
 url: "http://polished-rb.github.io" # the base hostname & protocol for your site
 twitter_username: jaredcwhite
 github_username:  polished-rb
