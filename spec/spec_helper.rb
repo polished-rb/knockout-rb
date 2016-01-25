@@ -1,2 +1,2 @@
 require 'opal/jquery'
-require 'opal/knockout'
+require 'polished/knockout'
