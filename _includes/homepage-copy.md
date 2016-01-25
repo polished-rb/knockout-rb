@@ -21,7 +21,7 @@ class UsersView < Knockout::ViewModel
 end
 {% endhighlight %}
 
-To learn more about how this works and to get started using Polished: Knockout in your own project, read the [Getting Started tutorial](/knockout/getting-started/). For further in-depth documentation, visit the [Documentation section](/knockout/docs/).
+To learn more about how this works and to get started using **Polished: Knockout** in your own project, read the [Getting Started tutorial](/knockout-rb/getting-started/). For further in-depth documentation, visit the [Documentation section](/knockout-rb/docs/).
 
 Interested in contributing, or need to raise an issue? The {% include icon-github.html username="polished-rb" %} /
 [knockout-rb](https://github.com/polished-rb/knockout-rb) repo on GitHub is the place to start!

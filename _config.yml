@@ -16,4 +16,4 @@ twitter_username: jaredcwhite
 github_username:  polished-rb
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
