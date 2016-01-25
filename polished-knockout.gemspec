@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Polished::Knockout::VERSION
   spec.authors       = ["Jared White"]
   spec.email         = ["jared@jaredwhite.com"]
-  spec.description   = %q{An Opal wrapper for creating view models that use Knockout.js for dynamic HTML updates and event handling}
+  spec.description   = %q{An Opal library for creating view models that use Knockout.js for dynamic HTML updates and event handling}
   spec.summary       = spec.description
   spec.homepage      = "https://github.com/polished-rb/knockout-rb"
   spec.license       = "MIT"

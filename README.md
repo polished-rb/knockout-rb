@@ -1,10 +1,8 @@
 # Polished: Knockout
 
-An [Opal (Ruby-to-JS)](http://opalrb.org) wrapper for creating view models that use Knockout.js for dynamic HTML updates and event handling.
+An [Opal (Ruby-to-JS)](http://opalrb.org) library for creating view models that use Knockout.js for dynamic HTML updates and event handling.
 
 ## Installation
-
-_NOTE! This project is still in its infancy and not yet on RubyGems. Once it's initially released, this will work:_
 
 Add this line to your application's Gemfile:
 
