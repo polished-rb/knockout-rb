@@ -7,6 +7,10 @@ permalink: /getting-started/
 First, you'll need to add the Polished: Knockout gem to your project (Rails or otherwise), typically by adding a line to your application's Gemfile:
 
     gem 'polished-knockout'
+    
+You'll need to add a require statement to load the library into your Opal context. For example, in a Rails app in `application.js.rb`:
+
+    require 'polished/knockout'
 
 The gem does not come with a copy of the actual Knockout.js file, so you'll need to include that in your layout file. For instance, using Knockout's CDN:
 
