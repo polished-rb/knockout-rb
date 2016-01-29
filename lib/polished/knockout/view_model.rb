@@ -258,6 +258,8 @@ end
 # yourself or worry too much whether an array is a standard array or a
 # KnockoutArray
 #
+# It's essentially a wrapper around KO's observableArray
+# http://knockoutjs.com/documentation/observableArrays.html
 class KnockoutArray < Array
   # NOTE: this method has to be run right after a KnockoutArray is first
   # initialized
@@ -310,6 +312,26 @@ class KnockoutArray < Array
     ret = super(obj)
     
     `self.ko_observable.push(obj.$to_n())`
+    
+    ret
+  end
+  
+  def unshift(obj)
+    obj = collection_check(obj)
+    
+    ret = super(obj)
+    
+    `self.ko_observable.unshift(obj.$to_n())`
+    
+    ret
+  end
+  
+  def slice!(index, length=1)
+    ret = super(index, length)
+    
+    unless ret == nil
+      `self.ko_observable.splice(index, length)`
+    end
     
     ret
   end

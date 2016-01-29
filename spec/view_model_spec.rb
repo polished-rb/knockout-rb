@@ -114,6 +114,15 @@ describe 'bindings with view collections' do
     
     view_model.items << TestCollectionItem.new.tap{|item| item.parent_view = view_model; item.title = "Name 4" }
     
-    expect(Element.find('#bindcoltest > ul > li:eq(3) > span').text).to eq('Name 4')    
+    expect(Element.find('#bindcoltest > ul > li:eq(3) > span').text).to eq('Name 4')
+    
+    view_model.items.unshift TestCollectionItem.new.tap{|item| item.parent_view = view_model; item.title = "Name 0" }
+    
+    expect(Element.find('#bindcoltest > ul > li:eq(0) > span').text).to eq('Name 0')
+    
+    sliced_items = view_model.items.slice!(1, 2)
+    
+    expect(sliced_items[1].title).to eq('Name 2')
+    expect(Element.find('#bindcoltest > ul > li:eq(1) > span').text).to eq('Name 3')
   end
 end
