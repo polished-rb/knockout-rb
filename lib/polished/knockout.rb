@@ -1,4 +1,5 @@
 if RUBY_ENGINE == 'opal'
+  require 'polished/knockout/knockout_array'
   require 'polished/knockout/view_model'
 else
   require 'opal'
